@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HLS Player</title>
+    <!-- إضافة مكتبة Video.js -->
+    <link href="https://vjs.zencdn.net/8.0.4/video-js.css" rel="stylesheet">
+</head>
+<body>
+    <h1>تشغيل فيديو HLS</h1>
+    <!-- عنصر الفيديو -->
+    <video
+        id="hls-player"
+        class="video-js vjs-default-skin"
+        controls
+        width="640"
+        height="360"
+        preload="auto"
+        data-setup='{}'>
+        <source src="https://manifest.googlevideo.com/api/manifest/hls_playlist/expire/1733749228/ei/jJVWZ9LOG-uvhcIPqYTvyAM/ip/46.184.7.45/id/zDuxYpvBUBI.1/itag/301/source/yt_live_broadcast/requiressl/yes/ratebypass/yes/live/1/sgoap/gir%3Dyes%3Bitag%3D140/sgovp/gir%3Dyes%3Bitag%3D299/rqh/1/hdlc/1/hls_chunk_host/rr2---sn-5uixxc-g0iz.googlevideo.com/xpc/EgVo2aDSNQ%3D%3D/playlist_duration/30/manifest_duration/30/vprv/1/playlist_type/DVR/initcwndbps/377500/met/1733727631,/mh/LW/mm/44/mn/sn-5uixxc-g0iz/ms/lva/mv/m/mvi/2/pl/24/rms/lva,lva/dover/11/pacing/0/keepalive/yes/fexp/51326932,51331020,51335594,51347746/mt/1733727151/sparams/expire,ei,ip,id,itag,source,requiressl,ratebypass,live,sgoap,sgovp,rqh,hdlc,xpc,playlist_duration,manifest_duration,vprv,playlist_type/sig/AJfQdSswRQIhAKFcLJHl4CZFFgn5fTsyQ4jQX6MLm7-IVQQjxgWC5Tu8AiBjjzK47qIX8eRfTjX8sdPNc7YESXZVDFYfVBbObfF9UQ%3D%3D/lsparams/hls_chunk_host,initcwndbps,met,mh,mm,mn,ms,mv,mvi,pl,rms/lsig/AGluJ3MwRQIgep9D5cHvTr3h5CW8pVK1kW5Po49apaS062BbQLBjZWQCIQC2ye9-ELaC042xyAR9cxB-egd3EvvU-0JaY_IgWCbQwg%3D%3D/playlist/index.m3u8" type="application/x-mpegURL">
+        <!-- رسالة في حالة عدم دعم المتصفح -->
+        المتصفح الخاص بك لا يدعم تشغيل HLS.
+    </video>
+
+    <!-- إضافة سكربت Video.js -->
+    <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script>
+</body>
+</html>
